@@ -1,10 +1,10 @@
 import sqlite3
 
-# Connect to SQLite database. It will be created if it doesn't exist.
+
 conn = sqlite3.connect('contact_book.db')
 cursor = conn.cursor()
 
-# Create table if it doesn't exist
+
 cursor.execute('''
     CREATE TABLE IF NOT EXISTS contacts (
         id INTEGER PRIMARY KEY,
